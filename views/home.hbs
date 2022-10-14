@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <section class="banner">
+    <div class="temp">
+        <h1>30<sup>0</sup></h1>
+        <h3>30<sup>0</sup> / 20<sup>0</sup></h3>
+    </div>
+    <div>
+        <div class="location">
+            <img height="30px" width="30px" src="/images/location.png" alt="">
+            <h2>Bangalore</h2>
+        </div>
+        <div>
+            <img src="/images/banne-img-right.png" alt="">
+        </div>
+    </div>
+    </section>
+
+    <section class="section2">
+            <div id="text">
+                <h1>Weather Assistant <br> In Your Phone</h1>
+                <h6>Find Out Rain and floods beckon as La <br> Nina looms and IOD deepens.</h6>
+               <a href="/weather"> <button>Check weather</button></a>
+            </div>
+            <div class="img1">
+                <img src="/images/apps-2.png" alt="">
+            </div>
+            <div>
+                <img width="382" height="544" src="/images/apps.png" alt="">
+            </div>
+    </section>
+    {{>footer}}
+</body>
+</html>

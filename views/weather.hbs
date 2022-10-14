@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    {{>navbar}}
+    <section class="weather">
+        <div class="searchInput">
+            
+            <input type="text" id="search" placeholder="enter city name">
+            <input type="submit" id="btn" value="search">
+        </div>
+
+        <div class="citylocation">
+         <img height="30px" width="30px" src="/images/location.png" alt="">
+
+            <p id="cityname"> Bangalore</p>
+
+
+        </div>
+        <div class="weatherInfo">
+            <div class="card" id="temperature">
+                <img width="150" src="/images/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.png" alt="">
+                <p id="cityName">Temperature</p>
+
+                <span id="temperature_value">0 </span><span><sup>o</sup> C</span>
+            </div>
+            <div class="card" id="humidity">
+                <img width="150"src="/images/Humidity_icon-icons.com_52507.png" alt="">
+                <h4>Humidity</h4>
+                <span id="humidity_value">30%</span><span>%</span>
+            </div>
+            <div class="card" id="wind">
+                <img width="150" src="/images/cloud_wind_icon-icons.com_62487.png" alt="">
+                <h4>Wind</h4>
+                <span id="wind_value"</span><span>km/hr</span>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+
+    <script src="/js/weather.js"></script>
+</body>
+</html>
